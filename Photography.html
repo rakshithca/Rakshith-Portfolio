@@ -1,46 +1,168 @@
+<!-- <!doctype html>
+<title>Example</title>
+<style>
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+</style>
+<main class="grid">
+  
+	<img class="grid" src="img/Photography/vegas_portrait.jpg"></img>
+	<img class="grid" src="img/Photography/vegas_road.jpg"></img>
+	<img class="grid" src="img/Photography/silver_rover.jpg"></img>
+
+	
+	<img src="img/Photography/vegas_strip2.jpg"></img>
+	<img src="img/Photography/vegas_portrait2.jpg"></img>
+	<img src="img/Photography/CAS_ford.jpg"></img>
+	
+</main> -->
+
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>PhotoBlog</title>
-	<link href="https://fonts.googleapis.com/css?family=Miss+Fajardose" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="Photography.css">
-</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1{
+  font-family: 'Miss Fajardose', cursive;	
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
 <body>
-	<h1>Rakshu's Design</h1>
 
-<!-- row 1 -->
-<img src="img/Photography/vegas_portrait.jpg"></img>
+<!-- Header -->
+<div class="header">
+  <h1>Rakshith's Photography</h1>
+</div>
 
-<img src="img/Photography/silver_rover.jpg"></img>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/Photography/vegas_portrait.jpg" style="width:100%"></img>
+    <img src="img/Photography/vegas_road.jpg" style="width:100%"></img>
+    <img src="img/Photography/silver_rover.jpg" style="width:100%"></img>
+    <img src="img/Photography/vegas_strip2.jpg" style="width:100%"></img>
+    <img src="img/Photography/vegas_portrait2.jpg" style="width:100%"></img>
+    
+    
+  </div>
+  <div class="column">
+      <img src="img/Photography/CAS_ford.jpg" style="width:100%"></img>
+      <img src="img/Photography/pondy_sunset.jpg" style="width:100%"></img>
+      <img src="img/Photography/vegas_strip2.jpg" style="width:100%"></img> 
+      <img src="img/Photography/vegas_portrait2.jpg" style="width:100%"></img>
+      <img src="img/Photography/bubbles.jpg" style="width:100%"></img>
+      <img src="img/Photography/edge.jpg" style="width:100%"></img>
+      <img src="img/Photography/pune_1.jpg" style="width:100%"></img>
 
-<!-- row 2 -->
-<img src="img/Photography/vegas_road.jpg"></img>
-<img src="img/Photography/vegas_strip2.jpg"></img>
-<img src="img/Photography/vegas_portrait2.jpg"></img>
-<img src="img/Photography/CAS_ford.jpg"></img>
+      <img src="img/Photography/blue_bird.jpg" style="width:100%"></img>
+      <img src="img/Photography/vade_sunset.jpg" style="width:100%"></img>
+      <img src="img/Photography/camel.jpg" style="width:100%"></img>
+      <img src="img/Photography/pune_tunnel.jpg" style="width:100%"></img>
+      <img src="img/Photography/beach_side_portrait.jpg" style="width:100%"></img>
+     
+      <img src="img/Photography/couple_shot.jpg" style="width:100%"></img>
+      <img src="img/Photography/eve.jpg" style="width:100%"></img>
+      <img src="img/Photography/eve_2.jpg" style="width:100%"></img>
+      <img src="img/Photography/camel.jpg" style="width:100%"></img>
+      <img src="img/Photography/sunset_2.jpg" style="width:100%"></img>
 
 
-<!-- row 3 -->
-<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg"></img>
+      <img src="img/Photography/sunset_full.jpg" style="width:100%"></img>
+      <img src="img/Photography/window_hawk.jpg" style="width:100%"></img>
+      <img src="img/Photography/pondy_pink.jpg" style="width:100%"></img>
+      <img src="img/Photography/boat_sun.jpg" style="width:100%"></img>
+      <img src="img/Photography/boat_kid.jpg" style="width:100%"></img>
+  
 
-<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg"></img>
+      <img src="img/Photography/me_portrait.jpg" style="width:100%"></img>
+      <img src="img/Photography/me_bench.jpg" style="width:100%"></img>
+      <img src="img/Photography/helmet_bike.jpg" style="width:100%"></img>
+      <img src="img/Photography/cat.jpg" style="width:100%"></img>
+      <img src="img/Photography/hornadu_iphone.jpg" style="width:100%"></img>
+  
+  
+  <!-- <img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg" style="width:100%"></img>
+	<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg" style="width:100%"></img>
+	<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg" style="width:100%"></img>
+	
+	<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg" style="width:100%"></img>
+	<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg" style="width:100%"></img>
+	<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg" style="width:100%"></img> -->
+  </div>  
+  <div class="column">
+      <img src="img/Photography/chicago.jpg" style="width:100%"></img>
+      <img src="img/Photography/green_snake.jpg" style="width:100%"></img>
+      <img src="img/Photography/helmet_bike.jpg" style="width:100%"></img>
+      <img src="img/Photography/cat.jpg" style="width:100%"></img>
+      <img src="img/Photography/hornadu_iphone.jpg" style="width:100%"></img>
+  </div>
+  <div class="column">
+      <img src="img/Photography/chicago.jpg" style="width:100%"></img>
+      <img src="img/Photography/me_bench.jpg" style="width:100%"></img>
+      <img src="img/Photography/helmet_bike.jpg" style="width:100%"></img>
+      <img src="img/Photography/cat.jpg" style="width:100%"></img>
+      <img src="img/Photography/hornadu_iphone.jpg" style="width:100%"></img>
+  </div>
+</div>
 
-<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"></img>
-<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg"></img>
-
-
-
-
-
-
-
-<!-- 
-<div id="one">One</div>
-<div id="two"> two</div> -->
 </body>
 </html>
